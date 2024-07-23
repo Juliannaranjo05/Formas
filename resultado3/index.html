@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <div class="general">
+    <div class="contenedor">
+      <form class="row g-3 needs-validation" method="#" novalidate onsubmit="return resta();">
+          <label for="txtsuma1" class="form-label titulo">Numero Uno</label>
+          <input type="number" class="form-control" min="0" stop="1" id="txtsuma1" required>
+          <label for="txtsuma2" class="form-label titulo">Numero Dos</label>
+          <input type="number" class="form-control"  min="0" stop="1" id="txtsuma2" required>
+          <div class="parent">
+            <div class="centrar1">
+              <button class="btn btn-primary" type="submit">restar</button>
+            </div>
+          </div>
+          <div class="valid-feedback">
+            Bien hecho bro!
+          </div>
+      </form>
+      <form class="row g-3 needs-validation" method="#" novalidate onsubmit="return multiplicacion();">
+        <div class="parent">
+          <div class="centrar1">
+            <button class="btn btn-primary" type="submit" >multiplicar</button>
+          </div>
+        </div>
+      </form>
+      <form class="row g-3 needs-validation" method="#" novalidate onsubmit="return division();">
+        <div class="parent">
+          <div class="centrar1">
+            <button class="btn btn-primary" type="submit" >dividir</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="respuesta">
+      <h6 class="texto">Respuesta:</h6>
+      <div id="operacion"></div>
+    </div>
+  </div>
+<script src="js/funcion.js"></script>
+<script src="bootstrap-5.2.1-dist/js/bootstrap.bundle.js"></script>
+<script src="js/validarte.js"></script>
+</body>
+</html>

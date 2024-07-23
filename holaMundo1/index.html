@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.2.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <form class="row g-3 needs-validation centrar" method="#" novalidate onsubmit="return saludo();">
+      <div class="contenedor">
+          <label for="txtsaludo" class="form-label titulo">Palabra</label>
+          <input type="text" class="form-control boton" id="txtsaludo" required>
+          <button class="btn btn-primary" type="submit" >Transportar</button>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+      </div>
+      <div class="respuesta">
+        <h6 class="texto">Respuesta:</h6>
+        <div id="saludo"></div>      
+      </div>
+      </form>
+<script src="js/funcion.js"></script>
+<script src="bootstrap-5.2.1-dist/js/bootstrap.bundle.js"></script>
+<script src="js/validarte.js"></script>
+</body>
+</html>
